@@ -63,4 +63,29 @@ public class Banco
 
         Console.WriteLine();
     }
+
+    public int ReleaseResources(int cliente, int[] release)
+{
+    lock (trava)
+    {
+        for (int i = 0; i < numeroRecursos; i++)
+        {
+            if (release[i] > allocation[cliente, i])
+            {
+                return -1;
+            }
+        }
+
+        for (int i = 0; i < numeroRecursos; i++)
+        {
+            allocation[cliente, i] -= release[i];
+            available[i] += release[i];
+            need[cliente, i] += release[i];
+        }
+
+        Console.WriteLine($"Cliente {cliente} liberou recursos.");
+
+        return 0;
+    }
+}
 }
