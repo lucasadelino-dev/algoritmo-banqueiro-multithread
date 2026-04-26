@@ -8,7 +8,7 @@ Trabalho acadêmico da disciplina de Sistemas Operacionais (PUC Betim), com impl
 - Ano: 2026
 - Professor: Lucas Braganca
 - Alunos:
-  - Bernardo Maia Lomas
+  - Bernardo Maia Lomas Ameno
   - Lucas Gabriel Adelino Araujo
 
 ## Objetivo
