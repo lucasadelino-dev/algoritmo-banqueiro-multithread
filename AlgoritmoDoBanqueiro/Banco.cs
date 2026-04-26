@@ -28,6 +28,11 @@ public class Banco
         InicializarNeed();
     }
 
+    public int NumeroRecursos()
+    {
+        return numeroRecursos;
+    }
+
     private void InicializarMaximum()
     {
         Random random = new Random();
@@ -156,35 +161,35 @@ public class Banco
                 {
                     return -1;
                 }
-    
+
                 if (request[i] > available[i])
                 {
                     return -1;
                 }
             }
-    
+
             for (int i = 0; i < numeroRecursos; i++)
             {
                 available[i] -= request[i];
                 allocation[cliente, i] += request[i];
                 need[cliente, i] -= request[i];
             }
-    
+
             if (IsSafe())
             {
                 Console.WriteLine($"Cliente {cliente} recebeu recursos.");
                 return 0;
             }
-    
+
             for (int i = 0; i < numeroRecursos; i++)
             {
                 available[i] += request[i];
                 allocation[cliente, i] -= request[i];
                 need[cliente, i] += request[i];
             }
-    
+
             Console.WriteLine($"Cliente {cliente} teve pedido negado.");
-    
+
             return -1;
         }
     }
