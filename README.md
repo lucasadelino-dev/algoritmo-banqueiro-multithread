@@ -39,6 +39,6 @@ Os valores apos `--` representam a quantidade inicial de cada tipo de recurso (e
 
 O programa demonstra, na pratica, os conceitos de concorrencia, sincronizacao e prevencao de deadlock, aplicando o Algoritmo do Banqueiro para manter o sistema em estado seguro durante a execucao.
 
-## Referencia
+## Referência
 
 SILBERSCHATZ, Abraham; GALVIN, Peter B.; GAGNE, Greg. Fundamentos de Sistemas Operacionais. 9. ed. Rio de Janeiro: LTC, 2015.
