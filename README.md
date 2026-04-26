@@ -4,7 +4,7 @@ Trabalho acadêmico da disciplina de Sistemas Operacionais (PUC Betim), com impl
 
 ## Identificação
 
-- Curso: Sistemas de Informação (3o período)
+- Curso: Sistemas de Informação (3º período)
 - Ano: 2026
 - Professor: Lucas Braganca
 - Alunos:
@@ -13,15 +13,15 @@ Trabalho acadêmico da disciplina de Sistemas Operacionais (PUC Betim), com impl
 
 ## Objetivo
 
-Simular um banco que gerencia requisicoes e liberacoes de recursos por clientes concorrentes, aceitando pedidos apenas quando o estado do sistema permanece seguro.
+Simular um banco que gerencia requisições e liberações  de recursos por clientes concorrentes, aceitando pedidos apenas quando o estado do sistema permanece seguro.
 
 ## O que foi implementado
 
 - 5 clientes executando concorrentemente em threads.
 - Vetores/matrizes classicos do algoritmo: `available`, `maximum`, `allocation` e `need`.
-- Operacoes de requisicao e liberacao de recursos.
-- Verificacao de seguranca (estado seguro/inseguro) antes de conceder requisicoes.
-- Uso de `lock` (mutex) para evitar condicoes de corrida no acesso aos dados compartilhados.
+- Operações de requisição e liberação de recursos.
+- Verificação de seguranca (estado seguro/inseguro) antes de conceder requisições.
+- Uso de `lock` (mutex) para evitar condições de corrida no acesso aos dados compartilhados.
 
 ## Como compilar e executar
 
@@ -33,11 +33,11 @@ No terminal, na raiz do projeto:
 dotnet run --project AlgoritmoDoBanqueiro -- 10 5 7
 ```
 
-Os valores apos `--` representam a quantidade inicial de cada tipo de recurso (exemplo com 3 tipos).
+Os valores após `--` representam a quantidade inicial de cada tipo de recurso (exemplo com 3 tipos).
 
 ## Resultado
 
-O programa demonstra, na pratica, os conceitos de concorrencia, sincronizacao e prevencao de deadlock, aplicando o Algoritmo do Banqueiro para manter o sistema em estado seguro durante a execucao.
+O programa demonstra, na prática, os conceitos de concorrência, sincronização e prevenção de deadlock, aplicando o Algoritmo do Banqueiro para manter o sistema em estado seguro durante a execução.
 
 ## Referência
 
